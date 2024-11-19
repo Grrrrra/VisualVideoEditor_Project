@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace VisualVideoEditor_Project
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             LoginForm loginForm = new LoginForm();
             loginForm.ShowDialog();

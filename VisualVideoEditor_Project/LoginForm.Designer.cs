@@ -78,64 +78,81 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(238, 218);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(141, 54);
-            this.btnClose.TabIndex = 4;
-            this.btnClose.Text = "종료";
-            this.btnClose.UseVisualStyleBackColor = true;
+            // metr            // 
             // 
             // Pwdlabel
             // 
-            this.Pwdlabel.AutoSize = true;
-            this.Pwdlabel.Location = new System.Drawing.Point(87, 146);
-            this.Pwdlabel.Name = "Pwdlabel";
-            this.Pwdlabel.Size = new System.Drawing.Size(53, 12);
-            this.Pwdlabel.TabIndex = 5;
-            this.Pwdlabel.Text = "비밀번호";
             // 
-            // textBox2
+            this.metroTextBox2.CustomButton.Image = null;
+            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(129, 1);
+            this.metroTextBox2.CustomButton.Name = "";
+            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox2.CustomButton.TabIndex = 1;
+            this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox2.CustomButton.UseSelectable = true;
+            this.metroTextBox2.CustomButton.Visible = false;
+            this.metroTextBox2.Lines = new string[] {
+        "metroTextBox2"};
+            this.metroTextBox2.Location = new System.Drawing.Point(208, 165);
+            this.metroTextBox2.MaxLength = 32767;
+            this.metroTextBox2.Name = "metroTextBox2";
+            this.metroTextBox2.PasswordChar = '\0';
+            this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox2.SelectedText = "";
+            this.metroTextBox2.SelectionLength = 0;
+            this.metroTextBox2.SelectionStart = 0;
+            this.metroTextBox2.ShortcutsEnabled = true;
+            this.metroTextBox2.Size = new System.Drawing.Size(151, 23);
+            this.metroTextBox2.TabIndex = 3;
+            this.metroTextBox2.Text = "metroTextBox2";
+            this.metroTextBox2.UseSelectable = true;
+            this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.metroTextBox2.Click += new System.EventHandler(this.metroTextBox2_Click);
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 143);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 21);
-            this.textBox2.TabIndex = 6;
+            // metroButton1
             // 
-            // btnNewLogin
+            this.metroButton1.Location = new System.Drawing.Point(101, 219);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(109, 51);
+            this.metroButton1.TabIndex = 4;
+            this.metroButton1.Text = "metroButton1";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
-            this.btnNewLogin.Location = new System.Drawing.Point(150, 193);
-            this.btnNewLogin.Name = "btnNewLogin";
-            this.btnNewLogin.Size = new System.Drawing.Size(141, 19);
-            this.btnNewLogin.TabIndex = 7;
-            this.btnNewLogin.Text = "회원가입";
-            this.btnNewLogin.UseVisualStyleBackColor = true;
+            // metroButton2
             // 
-            // stateLoginLabel
+            this.metroButton2.Location = new System.Drawing.Point(238, 219);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(109, 51);
+            this.metroButton2.TabIndex = 5;
+            this.metroButton2.Text = "metroButton2";
+            this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
-            this.stateLoginLabel.AutoSize = true;
-            this.stateLoginLabel.Location = new System.Drawing.Point(67, 307);
-            this.stateLoginLabel.Name = "stateLoginLabel";
-            this.stateLoginLabel.Size = new System.Drawing.Size(109, 12);
-            this.stateLoginLabel.TabIndex = 8;
-            this.stateLoginLabel.Text = "로그인을 해주세요.";
+            // metroButton3
+            // 
+            this.metroButton3.Location = new System.Drawing.Point(395, 16);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(43, 39);
+            this.metroButton3.TabIndex = 6;
+            this.metroButton3.Text = "X";
+            this.metroButton3.UseSelectable = true;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
             // LoginForm
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.AutoScroll = true;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(433, 348);
-            this.Controls.Add(this.stateLoginLabel);
-            this.Controls.Add(this.btnNewLogin);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.Pwdlabel);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.IDlabel);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.SettingLogin);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(451, 307);
+            this.Controls.Add(this.metroButton3);
+            this.Controls.Add(this.metroButton2);
+            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.metroTextBox2);
+            this.Controls.Add(this.metroTextBox1);
+            this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.metroLabel1);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
@@ -147,14 +164,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label SettingLogin;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Label IDlabel;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label Pwdlabel;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button btnNewLogin;
-        private System.Windows.Forms.Label stateLoginLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private System.Diagnostics.PerformanceCounter performanceCounter1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox metroTextBox2;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroButton metroButton3;
     }
 }

@@ -21,5 +21,20 @@ namespace VisualVideoEditor_Project
         {
 
         }
+
+        private void userName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreateAccForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAccession_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
