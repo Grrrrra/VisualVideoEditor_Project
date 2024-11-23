@@ -20,14 +20,32 @@
 - 주요 기능 3
 - ...
 
-## 설치 방법
+## 프로젝트 구조
 
-프로젝트를 설치하고 실행하기 위한 단계별 가이드를 작성합니다.
 ```bash
-# 예시 커맨드
-git clone https://github.com/username/repo.git
-cd repo
-# 필요한 패키지 설치exit
+VideoEditor/
+│
+├── Account/                # 로그인 및 사용자 계정 관련 폴더
+│   ├── LoginForm.cs        # 로그인 폼
+│   ├── RegistrationForm.cs  # 회원가입 폼
+│
+├── VideoEditing/           # 비디오 편집 관련 폴더
+│   ├── VideoClip.cs        # 비디오 클립 클래스
+│   ├── VideoEditor.cs      # 비디오 편집 기능 클래스
+│   ├── Effects.cs          # 비디오 효과 클래스
+│
+├── Repository/             # 데이터 저장 및 관리 관련 폴더
+│   ├── VideoRepository.cs   # 비디오 파일 및 메타데이터 저장 클래스
+│   ├── UserRepository.cs     # 사용자 정보 저장 클래스
+│
+├── Forms/                  # 다양한 폼 관련 폴더
+│   ├── MainForm.cs         # 메인 폼
+│   ├── EditForm.cs         # 비디오 편집 폼
+│   ├── PreviewForm.cs      # 비디오 미리보기 폼
+│   ├── SettingsForm.cs     # 설정 폼
+│
+└── Program.cs              # 프로그램 진입점
+
 ```
 
 ### 2. 각 섹션 설명
