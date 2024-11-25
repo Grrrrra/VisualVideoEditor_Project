@@ -1,29 +1,17 @@
 ﻿using System;
-using System.IO;
-using System.Diagnostics;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing; // Graphics 사용을 위한 네임스페이스
 using System.Windows.Forms;
 using MetroFramework.Forms;
-using MetroFramework.Components;
 using MetroFramework.Controls;
-using System.Configuration; // 설정 파일을 다루기 위한 네임스페이스
-
+using MetroFramework.Components;
 
 namespace VisualVideoEditor_Project
 {
     public partial class MainForm : MetroForm
     {
-
-        private MetroButton metroButton1;
-        private MetroTextBox metroTextBox1;
-        private LoginForm loginForm;
-        private MetroStyleManager styleManager;
+        private LoginForm loginForm; // 로그인 폼 인스턴스
+        private MetroStyleManager styleManager; // 스타일 매니저
+        private string username; // 사용자 이름 저장
 
         public MainForm(string username, LoginForm form)
         {
@@ -32,11 +20,12 @@ namespace VisualVideoEditor_Project
             InitializeDragAndDrop();
             LoadSettings(); // 설정 로드
 
-            SetGreetingMessage(username); // 인사 메시지 설정
-            this.loginForm = form; // 로그인 폼 인스턴스를 저장
-            this.FormClosing += MainForm_FormClosing;
-
+            this.username = username; // 사용자 이름 저장
+            SetGreetingMessage(); // 인사 메시지 설정
+            this.loginForm = form; // 로그인 폼 인스턴스 저장
+            this.FormClosing += MainForm_FormClosing; // 폼 종료 이벤트 핸들러 추가
         }
+
         private void LoadSettings()
         {
             // 설정에서 값 로드 (예: LastAccessDate)
@@ -46,6 +35,7 @@ namespace VisualVideoEditor_Project
                 // 추가 로직이 필요할 수 있습니다.
             }
         }
+
         private void SaveSettings()
         {
             // 설정 저장 (예: LastAccessDate)
@@ -59,48 +49,48 @@ namespace VisualVideoEditor_Project
             if (loginForm != null && !loginForm.IsDisposed)
             {
                 loginForm.Close(); // 로그인 폼 종료
-            //로그인 폼이 지금 시작 폼으로 설정되어 있어서 this.Hide()된 폼을 MainForm.cs파일 종료시 같이 종료시켜 프로그램을 완전히 종료시키는 경우,
-            //프로그램을 완전히 종료시킴.
             }
         }
-      
+
+        private void SetGreetingMessage()
+        {
+            // MetroForm의 제목을 사용자 이름을 포함한 인사 메시지로 설정
+            this.Text = $"안녕하세요! {username}님! Quickcut에 오신 것을 환영합니다!";
+        }
+
         private void 도움말ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            // 도움말 메뉴 클릭 시 동작
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            // 폼 로드 시 필요한 초기화 작업
         }
 
         private void ModeSelect_Enter(object sender, EventArgs e)
         {
-            
+            // 모드 선택 시 동작
         }
 
         private void metroLabel1_Click(object sender, EventArgs e)
         {
-
+            // 레이블 클릭 시 동작
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            //
+            // 그룹 박스 1 진입 시 동작
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
         {
-
+            // 그룹 박스 2 진입 시 동작
         }
+
         private void metroButton1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("버튼이 클릭되었습니다!");
-        }
-
-        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

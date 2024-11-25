@@ -4,7 +4,6 @@ using MetroFramework.Forms;
 using System;
 using System.IO;
 using System.Windows.Forms;
-using AxWMPLib;
 namespace VisualVideoEditor_Project
 {
     partial class MainForm
@@ -38,8 +37,6 @@ namespace VisualVideoEditor_Project
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -50,52 +47,8 @@ namespace VisualVideoEditor_Project
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ModeSelect = new System.Windows.Forms.GroupBox();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-
             this.menuStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.Location = new System.Drawing.Point(6, 374);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.TabIndex = 0;
-            this.metroButton1.Text = "Click Me";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
-            // metroTextBox1
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(178, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(432, 20);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ReadOnly = true;
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(200, 23);
-            this.metroTextBox1.TabIndex = 1;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // contextMenuStrip1
             // 
@@ -111,54 +64,57 @@ namespace VisualVideoEditor_Project
             this.컷편집ToolStripMenuItem,
             this.보기ToolStripMenuItem,
             this.도움말ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(20, 60);
+            this.menuStrip1.Location = new System.Drawing.Point(23, 75);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1052, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1202, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 설정ToolStripMenuItem
             // 
             this.설정ToolStripMenuItem.Name = "설정ToolStripMenuItem";
-            this.설정ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.설정ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.설정ToolStripMenuItem.Text = "파일";
             // 
             // 컷편집ToolStripMenuItem
             // 
             this.컷편집ToolStripMenuItem.Name = "컷편집ToolStripMenuItem";
-            this.컷편집ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.컷편집ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.컷편집ToolStripMenuItem.Text = "편집";
             // 
             // 보기ToolStripMenuItem
             // 
             this.보기ToolStripMenuItem.Name = "보기ToolStripMenuItem";
-            this.보기ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.보기ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.보기ToolStripMenuItem.Text = "보기";
             // 
             // 도움말ToolStripMenuItem
             // 
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
-            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.도움말ToolStripMenuItem.Text = "도움말";
             this.도움말ToolStripMenuItem.Click += new System.EventHandler(this.도움말ToolStripMenuItem_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.metroTextBox1);
-            this.groupBox1.Controls.Add(this.metroButton1);
-            this.groupBox1.Controls.Add(this.axWindowsMediaPlayer1);
-            this.groupBox1.Location = new System.Drawing.Point(439, 87);
+            this.groupBox1.Location = new System.Drawing.Point(502, 109);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(638, 403);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(729, 504);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Drag and Drop MP4 Here";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBox2
             // 
-            this.groupBox2.Location = new System.Drawing.Point(12, 496);
+            this.groupBox2.Location = new System.Drawing.Point(14, 620);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1065, 201);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(1217, 251);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "stateBox";
@@ -166,42 +122,34 @@ namespace VisualVideoEditor_Project
             // 
             // ModeSelect
             // 
-            this.ModeSelect.Location = new System.Drawing.Point(12, 87);
+            this.ModeSelect.Location = new System.Drawing.Point(14, 109);
+            this.ModeSelect.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ModeSelect.Name = "ModeSelect";
-            this.ModeSelect.Size = new System.Drawing.Size(421, 403);
+            this.ModeSelect.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ModeSelect.Size = new System.Drawing.Size(481, 504);
             this.ModeSelect.TabIndex = 4;
             this.ModeSelect.TabStop = false;
             this.ModeSelect.Text = "ModeSelect";
             this.ModeSelect.Enter += new System.EventHandler(this.ModeSelect_Enter);
             // 
-            // axWindowsMediaPlayer1
-            // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(6, 20);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(627, 349);
-            this.axWindowsMediaPlayer1.TabIndex = 2;
-            this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
-            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1092, 709);
+            this.ClientSize = new System.Drawing.Size(1248, 886);
             this.Controls.Add(this.ModeSelect);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
+            this.Padding = new System.Windows.Forms.Padding(23, 75, 23, 25);
             this.Text = "MainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,7 +190,6 @@ namespace VisualVideoEditor_Project
             {
                 if (Path.GetExtension(file).ToLower() == ".mp4")
                 {
-                    metroTextBox1.Text = file;
                 }
                 else
                 {
@@ -262,7 +209,7 @@ namespace VisualVideoEditor_Project
 
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox ModeSelect;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+
     }
 }
 

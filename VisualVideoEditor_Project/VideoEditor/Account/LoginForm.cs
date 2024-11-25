@@ -21,8 +21,9 @@ namespace VisualVideoEditor_Project
             {
                 string username = Properties.Settings.Default.Username; // 저장된 사용자 이름 가져오기
                 MessageBox.Show("로그인 성공!");
+
                 // MainForm으로 이동
-                MainForm mainForm = new MainForm(username, this);
+                MainForm mainForm = new MainForm(username, this); // 사용자 이름과 로그인 폼 인스턴스를 전달
                 mainForm.Show(); // MainForm을 표시
                 this.Hide(); // 현재 로그인 폼 숨기기
             }
@@ -45,13 +46,6 @@ namespace VisualVideoEditor_Project
             CreateAccount createAccountForm = new CreateAccount(this);
             createAccountForm.Show(); // 회원가입 폼을 표시
             this.Hide(); // 로그인 폼 숨기기
-        }
-
-        private bool CheckCredentials(string username, string password)
-        {
-            // 여기에 데이터베이스를 확인하고 사용자 인증을 수행합니다.
-            // 예시로 간단한 조건을 사용합니다.
-            return username == "testUser" && password == "testPassword"; // 예시: 고정된 사용자 정보
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
