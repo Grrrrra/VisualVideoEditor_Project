@@ -45,9 +45,8 @@ namespace VisualVideoEditor_Project
             // CreateAccount 폼을 로그인 폼 인스턴스를 인자로 전달하여 생성
             CreateAccount createAccountForm = new CreateAccount(this);
             createAccountForm.Show(); // 회원가입 폼을 표시
-            this.Hide(); // 로그인 폼 숨기기
+            this.Hide(); // 로그인 폼 숨기기 
         }
-
         private void LoginForm_Load(object sender, EventArgs e)
         {
             // 폼 로드 시 필요한 초기화 작업

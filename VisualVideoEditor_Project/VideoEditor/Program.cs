@@ -20,19 +20,6 @@ namespace VisualVideoEditor_Project
         }
         static async Task Main(string[] args)
         {
-            await GetMetaDataAsync();
-            Console.ReadLine();
-        }
-
-        private static async Task GetMetaDataAsync()
-        {
-            var inputFile = new MediaFile(@"C:\Users\jyj36\Videos\Captures\백지헌");
-
-            var ffmpeg = new Engine(@"C:\Temp\ffmpeg.exe");
-
-            var metadata = await ffmpeg.GetMetaDataAsync(inputFile);
-
-            Console.WriteLine(metadata);
         }
     }
 }
