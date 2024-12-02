@@ -16,5 +16,10 @@ namespace VisualVideoEditor_Project.VideoEditor.Forms
         {
             InitializeComponent();
         }
+
+        private void SettingsForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

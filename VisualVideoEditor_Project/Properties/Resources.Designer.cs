@@ -59,5 +59,25 @@ namespace VisualVideoEditor_Project.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap free_icon_pause_play_9513367 {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-pause-play-9513367", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap free_icon_play_8029490 {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-play-8029490", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
