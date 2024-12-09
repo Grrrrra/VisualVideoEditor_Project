@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VisualVideoEditor_Project.VideoEditor.Forms
 {
-    public partial class SettingsForm : Form
+    public partial class PreviewForm : Form
     {
-        public SettingsForm()
+        public PreviewForm()
         {
             InitializeComponent();
         }

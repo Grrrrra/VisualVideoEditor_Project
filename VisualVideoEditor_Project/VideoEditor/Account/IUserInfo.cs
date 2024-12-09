@@ -12,6 +12,5 @@ namespace VisualVideoEditor_Project.VideoEditor.Account
         void Save();
         void Reset();
         bool IsUserExists(string username, string userId);
-
     }
 }

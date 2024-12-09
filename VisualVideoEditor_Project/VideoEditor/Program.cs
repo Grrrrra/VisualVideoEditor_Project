@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FFmpeg.NET; // FFmpeg.NET으로 비디오 인코딩 디코딩 구현
+using System;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace VisualVideoEditor_Project
@@ -16,12 +18,21 @@ namespace VisualVideoEditor_Project
             Application.Run(new LoginForm());
 
         }
-<<<<<<< HEAD
-
-=======
         static async Task Main(string[] args)
         {
+            await GetMetaDataAsync();
+            Console.ReadLine();
         }
->>>>>>> 611bee9f20765e6f98f3e1019cdd106599328821
+
+        private static async Task GetMetaDataAsync()
+        {
+            var inputFile = new MediaFile(@"C:\Users\jyj36\Videos\Captures\백지헌");
+
+            var ffmpeg = new Engine(@"C:\Temp\ffmpeg.exe");
+
+            var metadata = await ffmpeg.GetMetaDataAsync(inputFile);
+
+            Console.WriteLine(metadata);
+        }
     }
 }
