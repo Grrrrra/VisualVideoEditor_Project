@@ -1,4 +1,6 @@
-﻿namespace VisualVideoEditor_Project
+﻿using LibVLCSharp.Shared;
+
+namespace VisualVideoEditor_Project
 {
     partial class LoginForm
     {

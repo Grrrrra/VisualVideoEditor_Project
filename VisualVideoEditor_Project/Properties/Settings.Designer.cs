@@ -25,7 +25,7 @@ namespace VisualVideoEditor_Project.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DefaultUsername")]
         public string Username {
             get {
                 return ((string)(this["Username"]));
@@ -37,7 +37,7 @@ namespace VisualVideoEditor_Project.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DefaultUserId")]
         public string UserId {
             get {
                 return ((string)(this["UserId"]));
@@ -49,7 +49,7 @@ namespace VisualVideoEditor_Project.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DefaultPassword")]
         public string Password {
             get {
                 return ((string)(this["Password"]));
@@ -61,6 +61,7 @@ namespace VisualVideoEditor_Project.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2024-01-01")]
         public global::System.DateTime LastAccessDate {
             get {
                 return ((global::System.DateTime)(this["LastAccessDate"]));
