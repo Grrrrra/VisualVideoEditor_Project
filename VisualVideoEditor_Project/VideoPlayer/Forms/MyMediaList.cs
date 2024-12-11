@@ -67,7 +67,7 @@ namespace VisualVideoEditor_Project.VideoEditor.Forms
             {
                 foreach (ListViewItem item in lvPcList.SelectedItems)
                 {
-                    currentUser.RemoveFavorite(item.Text); // 즐겨찾기에서 제거
+                    currentUser.RemoveFavorite(item.Text + "," + item.SubItems[1].Text); // 즐겨찾기에서 제거
                     lvPcList.Items.Remove(item); // 리스트 뷰에서 선택된 항목 제거
                 }
             }
@@ -85,13 +85,11 @@ namespace VisualVideoEditor_Project.VideoEditor.Forms
                 // 선택된 항목이 하나일 경우에만 처리
                 if (lvPcList.SelectedItems.Count == 1)
                 {
-                    // 선택된 항목
                     var selectedItem = lvPcList.SelectedItems[0];
 
                     // 서브아이템이 2개 이상인지 확인
                     if (selectedItem.SubItems.Count > 1)
                     {
-                        // 선택된 항목의 경로를 가져옴
                         string directoryPath = selectedItem.SubItems[1].Text; // Directory 열의 텍스트
 
                         // txtVideoPath 텍스트 박스에 경로를 설정

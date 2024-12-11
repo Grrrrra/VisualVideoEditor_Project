@@ -56,10 +56,7 @@
   <ItemGroup>
     <Reference Include="FFmpeg.AutoGen, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FFmpeg.AutoGen.7.0.0\lib\netstandard2.0\FFmpeg.AutoGen.dll</HintPath>
-<<<<<<< HEAD
       <Private>True</Private>
-=======
->>>>>>> 611bee9f20765e6f98f3e1019cdd106599328821
     </Reference>
     <Reference Include="FFmpeg.NET, Version=3.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\xFFmpeg.NET.3.4.0\lib\netstandard2.0\FFmpeg.NET.dll</HintPath>
@@ -67,12 +64,9 @@
     <Reference Include="LibVLCSharp, Version=3.9.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\LibVLCSharp.3.9.1\lib\net471\LibVLCSharp.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
-=======
     <Reference Include="LibVLCSharp.Forms, Version=3.9.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\LibVLCSharp.Forms.3.9.1\lib\netstandard2.0\LibVLCSharp.Forms.dll</HintPath>
     </Reference>
->>>>>>> 611bee9f20765e6f98f3e1019cdd106599328821
     <Reference Include="LibVLCSharp.WinForms, Version=3.9.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\LibVLCSharp.WinForms.3.9.1\lib\net40\LibVLCSharp.WinForms.dll</HintPath>
     </Reference>
@@ -100,54 +94,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="VideoEditor\Account\AccountUser.cs" />
-    <Compile Include="VideoEditor\Account\CreateAccount.cs">
+    <Compile Include="VideoPlayer\Account\AccountUser.cs" />
+    <Compile Include="VideoPlayer\Account\CreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VideoEditor\Account\CreateAccount.Designer.cs">
+    <Compile Include="VideoPlayer\Account\CreateAccount.Designer.cs">
       <DependentUpon>CreateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="VideoEditor\Account\Interface\IFavoriteInfo.cs" />
-    <Compile Include="VideoEditor\Account\Interface\IUserInfo.cs" />
-    <Compile Include="VideoEditor\Account\LoginForm.cs">
+    <Compile Include="VideoPlayer\Account\Interface\IFavoriteInfo.cs" />
+    <Compile Include="VideoPlayer\Account\Interface\IUserInfo.cs" />
+    <Compile Include="VideoPlayer\Account\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VideoEditor\Account\LoginForm.Designer.cs">
+    <Compile Include="VideoPlayer\Account\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="VideoEditor\Forms\CurrentTimeForm.cs">
+    <Compile Include="VideoPlayer\Forms\CurrentTimeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VideoEditor\Forms\CurrentTimeForm.Designer.cs">
+    <Compile Include="VideoPlayer\Forms\CurrentTimeForm.Designer.cs">
       <DependentUpon>CurrentTimeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="VideoEditor\Forms\FFmProcess.cs" />
-    <Compile Include="VideoEditor\Forms\MainForm.cs">
+    <Compile Include="VideoPlayer\Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VideoEditor\Forms\MainForm.Designer.cs">
+    <Compile Include="VideoPlayer\Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="VideoEditor\Forms\MyMediaList.cs">
+    <Compile Include="VideoPlayer\Forms\MyMediaList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VideoEditor\Forms\MyMediaList.Designer.cs">
+    <Compile Include="VideoPlayer\Forms\MyMediaList.Designer.cs">
       <DependentUpon>MyMediaList.cs</DependentUpon>
     </Compile>
-    <Compile Include="VideoEditor\Program.cs" />
+    <Compile Include="VideoPlayer\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VideoEditor\Account\UserInfo.cs" />
-    <EmbeddedResource Include="VideoEditor\Account\CreateAccount.resx">
+    <Compile Include="VideoPlayer\Account\UserInfo.cs" />
+    <EmbeddedResource Include="VideoPlayer\Account\CreateAccount.resx">
       <DependentUpon>CreateAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="VideoEditor\Account\LoginForm.resx">
+    <EmbeddedResource Include="VideoPlayer\Account\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="VideoEditor\Forms\CurrentTimeForm.resx">
+    <EmbeddedResource Include="VideoPlayer\Forms\CurrentTimeForm.resx">
       <DependentUpon>CurrentTimeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="VideoEditor\Forms\MainForm.resx">
+    <EmbeddedResource Include="VideoPlayer\Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -159,14 +156,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-<<<<<<< HEAD
-    <EmbeddedResource Include="VideoEditor\Forms\MyMediaList.resx">
+    <EmbeddedResource Include="VideoPlayer\Forms\MyMediaList.resx">
       <DependentUpon>MyMediaList.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="VideoEditor\Forms\SettingsForm.resx">
-      <DependentUpon>SettingsForm.cs</DependentUpon>
->>>>>>> 611bee9f20765e6f98f3e1019cdd106599328821
     </EmbeddedResource>
+    <EmbeddedResource Include="VideoPlayer\Forms\SettingsForm.resx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -197,21 +190,19 @@
   <ItemGroup>
     <Content Include="XMLFile.xml" />
     <None Include="Resources\free-icon-play-8029490.png" />
-    <None Include="Resources\free-icon-pause-play-9513367.png" />
-    <Content Include="VideoEditor\Forms\VLC\libvlc.dll">
+    <Content Include="VideoPlayer\Forms\VLC\libvlc.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VideoEditor\Forms\VLC\libvlccore.dll">
+    <Content Include="VideoPlayer\Forms\VLC\libvlccore.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\free-icon-play-8029490.png" />
     <None Include="Resources\free-icon-pause-play-9513367.png" />
-    <Content Include="VideoEditor\Forms\VLC\libvlc.dll">
+    <Content Include="VideoPlayer\Forms\VLC\libvlc.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VideoEditor\Forms\VLC\libvlccore.dll">
+    <Content Include="VideoPlayer\Forms\VLC\libvlccore.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

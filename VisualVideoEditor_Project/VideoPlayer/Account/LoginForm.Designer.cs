@@ -136,7 +136,6 @@ namespace VisualVideoEditor_Project
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "LoginForm";
             this.Text = "로그인";
-            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

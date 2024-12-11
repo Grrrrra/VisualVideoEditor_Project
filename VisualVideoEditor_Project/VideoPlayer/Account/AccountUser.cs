@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace VisualVideoEditor_Project.VideoEditor.Account
 {
     public class AccountUser : UserInfo

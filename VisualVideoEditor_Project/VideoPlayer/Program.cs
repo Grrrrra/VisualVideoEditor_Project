@@ -16,12 +16,5 @@ namespace VisualVideoEditor_Project
             Application.Run(new LoginForm());
 
         }
-<<<<<<< HEAD
-
-=======
-        static async Task Main(string[] args)
-        {
-        }
->>>>>>> 611bee9f20765e6f98f3e1019cdd106599328821
     }
 }
